@@ -177,7 +177,7 @@ def level6(level_code='', input=''):
             print '''
 To complete this exercise insert the string from level 3 as an array of words.
 This time insert only the first two elements and the last two elements as one list.
-Hints:  - you can extract sub lists by with list[begin:end]
+Hints:  - you can extract sub lists with list[begin:end]
     - you can concatenate lists with the + sign
 '''
         elif input == ['I', 'like', 'next', 'level']:
@@ -231,8 +231,8 @@ def level8(level_code='', input=''):
                 print '''
 write a function that takes one input argument
 if the input is 42 the function should return the bool True
-if the input is any other number lager than zero it should return the bool False
-if the input is a number smaler or equal to zero it should not return anything 
+if the input is any other number larger than zero it should return the bool False
+if the input is a number smaller or equal to zero it should not return anything 
 insert your function as argument
 '''
             elif input(42) and not input(23) and input(0) == None and input(-34) == None:
@@ -352,7 +352,9 @@ def level11(level_code='', input=''):
 make your module executable
 your python script should take one input argument
 the input argument should be passed to your function and the result should be printed
-you can test your own fuction with
+you can test your own function with
+
+run myexercise.py Bazinga
 ----------------------------------------------------------------------
 '''
             import os
@@ -389,7 +391,7 @@ Here is your Bunny
             ~~~~~~~~~~~~~~~~~~~~~~~~~~    
 '''
             else:
-                print 'something went wrog check your module'
+                print 'something went wrong check your module'
     else:
         print 'wrong level code'
 #///////////////////////////////////////////////////////////////
@@ -405,6 +407,7 @@ This is how it is done:
 
 In [1]: level0()
     '''
-    from IPython.Shell import IPShellEmbed
-    ipshell = IPShellEmbed()
+    #from IPython.Shell import IPShellEmbed
+    import IPython
+    ipshell = IPython.embed()
     ipshell()  # this call anywhere in your program will start IPython
