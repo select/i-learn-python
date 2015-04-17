@@ -320,7 +320,7 @@ Ace!
 
 In [1]: my_sum = 0
 
-In [2]: for element in range(942):
+In [2]: for element in xrange(942):
    ....:     my_sum += element
    ....:     
 
@@ -346,7 +346,7 @@ Hint: - You can use the sum() function for many python objects.
 			print '''
 Almost done!
 
-In [1]: sum(range(942))
+In [1]: sum(xrange(942))
 
 The next level code is: fu73LcBA
 level13('fu73LcBA')
@@ -400,7 +400,7 @@ def level14(level_code='',input=''):
 write a function that takes one input argument
 if the input is 42 the function should return the bool True
 if the input is any other number larger than zero it should return the bool False
-if the input is a number smaler or equal to zero it should not return anything 
+if the input is a number smaller or equal to zero it should not return anything 
 insert your function as argument
 '''
 			elif input(42) and not input(23) and input(0)==None and input(-34)==None:
